@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/ASUS/Downloads/gemini-code-1793654861305.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross-Border Strategic Alliance MoI — Precision Alliance</title>
+  <style>
+    :root {
+      --bg-superwhite: #FFFFFF;
+      --navy-blue: #0A192F;
+      --dark-green: #1B4332;
+      --sunny-gold: #D4AF37;
+      --teal: #008080;
+      --text-primary: #1A202C;
+      --text-muted: #4A5568;
+      --card-bg: #F8FAFC;
+      --border-color: #E2E8F0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg-superwhite);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container { max-width: 1000px; margin: 0 auto; background: var(--bg-superwhite); }
+
+    /* Narrator Floating Bar */
+    .narrator-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--navy-blue);
+      color: #FFFFFF;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid var(--sunny-gold);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      font-size: 0.85rem;
+      border-radius: 6px 6px 0 0;
+    }
+    .narrator-controls { display: flex; gap: 10px; align-items: center; }
+    .btn-narrator {
+      background: var(--sunny-gold);
+      color: var(--navy-blue);
+      border: none;
+      padding: 6px 14px;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.78rem;
+      transition: background 0.2s;
+    }
+    .btn-narrator:hover { background: #e6c547; }
+    .narrator-status { font-style: italic; color: #E2E8F0; font-size: 0.8rem; }
+
+    .ownership-bar {
+      background: var(--dark-green);
+      color: #FFFFFF;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--sunny-gold);
+    }
+    .ownership-bar span { color: var(--sunny-gold); }
+
+    .header-block {
+      background-color: var(--navy-blue);
+      color: var(--bg-superwhite);
+      padding: 40px 30px;
+      border-radius: 0 0 8px 8px;
+      border-bottom: 5px solid var(--sunny-gold);
+      margin-bottom: 35px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .header-block h1 {
+      font-size: 2.1rem;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      color: var(--sunny-gold);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .header-block .subtitle { font-size: 1.05rem; color: #FFFFFF; font-weight: 600; margin-bottom: 15px; }
+    .header-block .tags { display: flex; flex-wrap: wrap; gap: 10px; font-size: 0.85rem; }
+    .header-block .tag { background: rgba(255, 255, 255, 0.1); padding: 4px 12px; border-radius: 20px; border: 1px solid var(--sunny-gold); color: #FFFFFF; }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      color: var(--navy-blue);
+      font-size: 1.35rem;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 8px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: var(--teal);
+      border-radius: 2px;
+    }
+
+    p { color: var(--text-muted); margin-bottom: 15px; font-size: 0.98rem; padding: 4px 8px; border-radius: 4px; transition: background-color 0.3s ease; }
+
+    .styled-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; background: #FFFFFF; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
+    .styled-table thead tr { background-color: var(--navy-blue); color: #FFFFFF; text-align: left; }
+    .styled-table th, .styled-table td { padding: 10px 12px; border: 1px solid var(--border-color); }
+    .styled-table tbody tr { border-bottom: 1px solid var(--border-color); }
+    .styled-table tbody tr:nth-of-type(even) { background-color: var(--card-bg); }
+
+    .audited-badge {
+      background-color: #F0FDF4;
+      border: 1px solid #10B981;
+      color: #065F46;
+      padding: 12px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .annexure-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--dark-green);
+      border-radius: 0 6px 6px 0;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .annexure-box h3 {
+      color: var(--navy-blue);
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .signature-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 30px; }
+    @media (max-width: 900px) { .signature-container { grid-template-columns: 1fr; } }
+
+    .signature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+    .signature-title { font-size: 0.8rem; font-weight: 700; color: var(--dark-green); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; border-bottom: 1px dashed var(--border-color); padding-bottom: 6px; }
+
+    .signature-dropzone {
+      position: relative;
+      width: 100%;
+      height: 90px;
+      margin-bottom: 12px;
+      background: #FFFFFF;
+      border: 1.5px dashed var(--teal);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      overflow: hidden;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .signature-dropzone:hover { background: #F0FDF4; border-color: var(--dark-green); }
+    .signature-dropzone p { font-size: 0.72rem; color: var(--text-muted); margin: 0; text-align: center; padding: 4px; }
+
+    .signature-preview-img {
+      max-width: 90%;
+      max-height: 75px;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+
+    .signature-actions { display: flex; justify-content: space-between; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
+    .btn-sig { padding: 4px 8px; font-size: 0.7rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; transition: all 0.2s ease; }
+    .btn-upload { background: #E2E8F0; color: var(--navy-blue); }
+    .btn-upload:hover { background: #CBD5E1; }
+    .btn-lock { background: var(--dark-green); color: #FFFFFF; }
+    .btn-lock:hover { background: #143225; }
+    .btn-unlock { background: #D97706; color: #FFFFFF; display: inline-block; }
+    .btn-unlock:hover { background: #B45309; }
+    .btn-sig:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .signatory-name { font-size: 0.9rem; font-weight: 800; color: var(--navy-blue); }
+    .signatory-role { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 2px; }
+    .signatory-meta { font-size: 0.7rem; color: var(--teal); font-weight: 600; }
+    .signature-status { font-size: 0.68rem; font-weight: 700; color: #D97706; margin-top: 4px; }
+    .signature-status.locked { color: #059669; }
+
+    .institutional-block { background-color: var(--navy-blue); color: #FFFFFF; padding: 25px; border-radius: 8px; margin-top: 40px; border-top: 4px solid var(--dark-green); }
+    .institutional-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; font-size: 0.88rem; }
+    .institutional-item strong { color: var(--sunny-gold); display: block; margin-bottom: 4px; }
+    .contact-link { color: #FFFFFF; text-decoration: underline; }
+
+    /* Active Highlight class for auto-scroll narrator */
+    .highlight-speech { background-color: #FEF08A !important; border-left: 4px solid var(--sunny-gold); transition: background-color 0.3s ease; }
+  </style>
+</head>
+<body>
+
+<div class="container" id="documentContainer">
+
+  <!-- Auto-Scroll Narrator Floating Bar -->
+  <div class="narrator-bar">
+    <div><strong>Precision Auto-Scroll Narrator</strong> — Pan-African Alliance MoI</div>
+    <div class="narrator-controls">
+      <span class="narrator-status" id="narratorStatus">Narration Complete</span>
+      <button type="button" class="btn-narrator" id="btnPlayNarrator" style="display: inline-block;">▶ Play Auto-Scroll</button>
+      <button type="button" class="btn-narrator" id="btnStopNarrator" style="display: none; background: rgb(239, 68, 68); color: rgb(255, 255, 255);">⏹ Stop</button>
+    </div>
+  </div>
+
+  <div class="ownership-bar" style="border-radius: 0;">
+    <div>CROSS-BORDER STRATEGIC ALLIANCE MOI — <span>PRECISION ALLIANCE (SOUTH AFRICA, ZIMBABWE, KENYA, GHANA)</span></div>
+    <div>SCAPUSH PRECISION STANDARD</div>
+  </div>
+
+  <header class="header-block">
+    <h1>MEMORANDUM OF INTENT (MoI)</h1>
+    <div class="subtitle">Pan-African Technical &amp; Advisory Consortium (PATAC) | Just Energy Transition (JET) EOI Alignment</div>
+    <div class="tags">
+      <span class="tag">Framework: Scapush Precision Execution Standard</span>
+      <span class="tag">Scope: Continental Agrivoltaics, TVET &amp; Smart Water Systems</span>
+      <span class="tag">Status: PRE-REGISTRATION STRATEGIC ALLIANCE</span>
+    </div>
+  </header>
+
+  <div class="audited-badge">
+    ✓ Fully Aligned for Continental Grant Acquisition, South-South Technology Transfer, and SANS 10400-S Universal Accessibility.
+  </div>
+
+  <section id="sec-parties">
+    <h2>1. PARTIES TO THE STRATEGIC ALLIANCE</h2>
+    <p class="narrate-item">1.1. Sipho Wiseman Khuzwayo, Founder, Steward &amp; Inclusive Legacy Architect representing Lwandile Engineering Projects (Pty) Ltd (South Africa). Email: siphokhuzwayo12@gmail.com.</p>
+    <p class="narrate-item">1.2. Peterson Asingadi, Power Engineering Senior Lecturer &amp; Prestige Academic Hub Custodian representing Zimbabwe academic and TVET integration workstreams. Email: asingadipa@gmail.com | Phone: +27 61 036 1258.</p>
+    <p class="narrate-item">1.3. Paul Neema, Professional Process Instrumentation Engineer &amp; Precision Engineering Anchor representing Kenya agrivoltaics, AI dashboard monitoring, and water systems. Email: havenwill289@gmail.com | Phone: +254 740 779 407.</p>
+    <p class="narrate-item">1.4. Godwin Grant Oyintey, Agricultural Specialist &amp; Head of Investment, Real Estate &amp; Market Expansion representing Ghana investment and real estate pillar. Email: admi.victorytomankind.2005@gmail.com | Phone: +233 54 492 7023.</p>
+  </section>
+
+  <section id="sec-vision">
+    <h2>2. VISION, PURPOSE AND STRATEGIC ALIGNMENT</h2>
+    <p class="narrate-item">2.1. Precision is our execution model. This Alliance unites elite African technologists, educators, and infrastructure experts to drive sustainable agrivoltaics through AI, renewable energy, and precision agriculture.</p>
+    <p class="narrate-item">2.2. The Parties establish this Memorandum of Intent (MoI) to formalize cooperation for the upcoming Just Energy Transition (JET) Expression of Interest (EOI) and subsequent developmental capital deployment.</p>
+  </section>
+
+  <section id="sec-governance">
+    <h2>3. GOVERNANCE AND EQUITY STRUCTURE</h2>
+    <p class="narrate-item">3.1. The Alliance operates on an equitable baseline distribution model, recognizing each principal's strategic contribution across technical, academic, and financial pillars.</p>
+    <p class="narrate-item">3.2. Governance decisions shall be governed by transparent consensus under the Scapush Precision Execution Standard, ensuring complete operational autonomy and collective impact.</p>
+  </section>
+
+  <section id="sec-roles">
+    <h2>4. PILLAR ROLES &amp; TECHNICAL EXECUTION</h2>
+    <p class="narrate-item">4.1. Sipho Khuzwayo: Leads ceremonial direction, governance artifact creation, funder alignment, and legacy transmission.</p>
+    <p class="narrate-item">4.2. Godwin Grant Oyintey: Develops investment strategies, land acquisition models, and funder-facing real estate portfolios.</p>
+    <p class="narrate-item">4.3. Peterson Asingadi: Designs accredited agrivoltaic training modules, leads TVET integration, and aligns curricula with funder impact metrics.</p>
+    <p class="narrate-item">4.4. Paul Neema: Oversees technical deployment of agrivoltaic systems, smart water irrigation, AI-based monitoring dashboards, and zero-mortality automation.</p>
+  </section>
+
+  <section id="sec-annexures">
+    <h2>5. STRATEGIC ANNEXURES &amp; OPERATIONAL FRAMEWORK</h2>
+
+    <div class="annexure-box" id="annex-a">
+      <h3>Annexure A — Campus Infrastructure &amp; Agrivoltaics</h3>
+      <p class="narrate-item">Deployment of 20,000 square meter bi-solar facilities integrating crop production, livestock, hydroponics, and SANS 10400-S step-free pathways.</p>
+    </div>
+
+    <div class="annexure-box" id="annex-b">
+      <h3>Annexure B — Scapush Precision Execution Standard</h3>
+      <p class="narrate-item">Rigorous monthly financial audits, zero administrative drift, and transparent milestone tracking.</p>
+    </div>
+
+    <div class="annexure-box" id="annex-c">
+      <h3>Annexure C — Vocational Training &amp; TVET Integration</h3>
+      <p class="narrate-item">Cross-border accredited skills transfer programs designed for disability inclusion and green economy readiness.</p>
+    </div>
+
+    <div class="annexure-box" id="annex-d">
+      <h3>Annexure D — Funding Architecture &amp; Grant Ring-Fencing</h3>
+      <p class="narrate-item">Securing JET grants, philanthropic capital, and ESG investments with strict dual-signature fund accounting.</p>
+    </div>
+  </section>
+
+  <section id="sec-signatures">
+    <h2>6. FORMAL ALLIANCE EXECUTION &amp; SIGNATURES</h2>
+    <p class="narrate-item">Signed electronically in alignment with international best practice and the Scapush Precision cryptographic timestamp protocol.</p>
+
+    <div class="signature-container">
+      
+      <!-- Signatory 1: Sipho Khuzwayo -->
+      <div class="signature-card">
+        <div class="signature-title">INCLUSIVE LEGACY ARCHITECT — SOUTH AFRICA</div>
+        <input type="file" id="file-sipho" accept="image/png, image/jpeg, image/jpg, image/svg+xml" style="display: none;">
+        <div class="signature-dropzone" id="dropzone-sipho" style="cursor: default;">
+          <p id="placeholder-sipho" style="display: none;">Click or drag &amp; drop signature<br><span style="font-size:0.6rem; color:var(--teal);">(PNG, JPG, SVG)</span></p>
+          <img id="img-sipho" class="signature-preview-img" style="display: block;" alt="Sipho Khuzwayo Signature" src="data:image/png;base64,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">
+        </div>
+        <div class="signature-actions">
+          <button type="button" class="btn-sig btn-upload" id="btn-upload-sipho" disabled="">Select File</button>
+          <button type="button" class="btn-sig btn-lock" id="btn-lock-sipho" disabled="">Lock</button>
+          <button type="button" class="btn-sig btn-unlock" id="btn-unlock-sipho" style="display: inline-block;">Unlock</button>
+        </div>
+        <div class="signatory-name">Sipho Wiseman Khuzwayo</div>
+        <div class="signatory-role">Founder &amp; Steward (Lwandile Engineering)</div>
+        <div class="signatory-meta">Email: siphokhuzwayo12@gmail.com</div>
+        <div class="signature-status locked" id="status-sipho">Sealed (2026-11-02 21:32:44 UTC)</div>
+      </div>
+
+      <!-- Signatory 2: Peterson Asingadi -->
+      <div class="signature-card">
+        <div class="signature-title">ACADEMIC HUB CUSTODIAN — ZIMBABWE</div>
+        <input type="file" id="file-peterson" accept="image/png, image/jpeg, image/jpg, image/svg+xml" style="display: none;">
+        <div class="signature-dropzone" id="dropzone-peterson">
+          <p id="placeholder-peterson">Click or drag &amp; drop signature<br><span style="font-size:0.6rem; color:var(--teal);">(PNG, JPG, SVG)</span></p>
+          <img id="img-peterson" class="signature-preview-img" style="display: none;" alt="Peterson Asingadi Signature">
+        </div>
+        <div class="signature-actions">
+          <button type="button" class="btn-sig btn-upload" id="btn-upload-peterson">Select File</button>
+          <button type="button" class="btn-sig btn-lock" id="btn-lock-peterson">Lock</button>
+          <button type="button" class="btn-sig btn-unlock" id="btn-unlock-peterson" style="display:none;">Unlock</button>
+        </div>
+        <div class="signatory-name">Peterson Asingadi</div>
+        <div class="signatory-role">Power Engineering Senior Lecturer</div>
+        <div class="signatory-meta">Email: asingadipa@gmail.com | +27 61 036 1258</div>
+        <div class="signature-status" id="status-peterson">Status: Ready</div>
+      </div>
+
+      <!-- Signatory 3: Paul Neema -->
+      <div class="signature-card">
+        <div class="signature-title">PRECISION ENGINEERING ANCHOR — KENYA</div>
+        <input type="file" id="file-paul" accept="image/png, image/jpeg, image/jpg, image/svg+xml" style="display: none;">
+        <div class="signature-dropzone" id="dropzone-paul">
+          <p id="placeholder-paul">Click or drag &amp; drop signature<br><span style="font-size:0.6rem; color:var(--teal);">(PNG, JPG, SVG)</span></p>
+          <img id="img-paul" class="signature-preview-img" style="display: none;" alt="Paul Neema Signature">
+        </div>
+        <div class="signature-actions">
+          <button type="button" class="btn-sig btn-upload" id="btn-upload-paul">Select File</button>
+          <button type="button" class="btn-sig btn-lock" id="btn-lock-paul">Lock</button>
+          <button type="button" class="btn-sig btn-unlock" id="btn-unlock-paul" style="display:none;">Unlock</button>
+        </div>
+        <div class="signatory-name">Paul Neema</div>
+        <div class="signatory-role">Professional Process Instrumentation Engineer</div>
+        <div class="signatory-meta">Email: havenwill289@gmail.com | +254 740 779 407</div>
+        <div class="signature-status" id="status-paul">Status: Ready</div>
+      </div>
+
+      <!-- Signatory 4: Godwin Grant Oyintey -->
+      <div class="signature-card">
+        <div class="signature-title">INVESTMENT &amp; REAL ESTATE PILLAR — GHANA</div>
+        <input type="file" id="file-grant" accept="image/png, image/jpeg, image/jpg, image/svg+xml" style="display: none;">
+        <div class="signature-dropzone" id="dropzone-grant">
+          <p id="placeholder-grant">Click or drag &amp; drop signature<br><span style="font-size:0.6rem; color:var(--teal);">(PNG, JPG, SVG)</span></p>
+          <img id="img-grant" class="signature-preview-img" style="display: none;" alt="Grant Oyintey Signature">
+        </div>
+        <div class="signature-actions">
+          <button type="button" class="btn-sig btn-upload" id="btn-upload-grant">Select File</button>
+          <button type="button" class="btn-sig btn-lock" id="btn-lock-grant">Lock</button>
+          <button type="button" class="btn-sig btn-unlock" id="btn-unlock-grant" style="display:none;">Unlock</button>
+        </div>
+        <div class="signatory-name">Godwin Grant Oyintey</div>
+        <div class="signatory-role">Agricultural Specialist &amp; Head of Investment</div>
+        <div class="signatory-meta">Email: admi.victorytomankind.2005@gmail.com | +233 54 492 7023</div>
+        <div class="signature-status" id="status-grant">Status: Ready</div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="institutional-block">
+    <div class="institutional-grid">
+      <div class="institutional-item">
+        <strong>Alliance Leadership</strong>
+        Sipho Khuzwayo (RSA) | Peterson Asingadi (ZIM)<br>
+        Paul Neema (KEN) | Godwin Grant Oyintey (GHA)
+      </div>
+      <div class="institutional-item">
+        <strong>Execution Standard</strong>
+        Scapush Precision Execution Standard<br>
+        Pan-African Technical &amp; Advisory Consortium
+      </div>
+      <div class="institutional-item">
+        <strong>Official Contact</strong>
+        <a href="mailto:siphokhuzwayo12@gmail.com" class="contact-link">siphokhuzwayo12@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- JavaScript for Auto-Scroll Narrator and Signatures -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // 1. Signature Slots Logic
+    const slots = ["sipho", "peterson", "paul", "grant"];
+
+    slots.forEach((prefix) => {
+      const fileInput = document.getElementById(`file-${prefix}`);
+      const dropzone = document.getElementById(`dropzone-${prefix}`);
+      const placeholder = document.getElementById(`placeholder-${prefix}`);
+      const imgPreview = document.getElementById(`img-${prefix}`);
+      const btnUpload = document.getElementById(`btn-upload-${prefix}`);
+      const btnLock = document.getElementById(`btn-lock-${prefix}`);
+      const btnUnlock = document.getElementById(`btn-unlock-${prefix}`);
+      const statusText = document.getElementById(`status-${prefix}`);
+
+      let isLocked = false;
+
+      function renderImage(src) {
+        imgPreview.src = src;
+        imgPreview.style.display = "block";
+        if (placeholder) placeholder.style.display = "none";
+      }
+
+      dropzone.addEventListener("click", () => { if (!isLocked) fileInput.click(); });
+      btnUpload.addEventListener("click", () => { if (!isLocked) fileInput.click(); });
+
+      fileInput.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = (event) => {
+            renderImage(event.target.result);
+            statusText.textContent = "Status: Loaded";
+            statusText.classList.remove("locked");
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+
+      dropzone.addEventListener("dragover", (e) => { e.preventDefault(); });
+      dropzone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        if (isLocked) return;
+        if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+          const file = e.dataTransfer.files[0];
+          const reader = new FileReader();
+          reader.onload = (event) => {
+            renderImage(event.target.result);
+            statusText.textContent = "Status: Loaded";
+            statusText.classList.remove("locked");
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+
+      btnLock.addEventListener("click", () => {
+        if (imgPreview.style.display === "none") {
+          alert("Please upload or select a signature image first.");
+          return;
+        }
+        isLocked = true;
+        btnUpload.disabled = true;
+        btnLock.disabled = true;
+        btnUnlock.style.display = "inline-block";
+        dropzone.style.cursor = "default";
+        
+        const lockTimestamp = new Date().toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
+        statusText.textContent = `Sealed (${lockTimestamp})`;
+        statusText.classList.add("locked");
+      });
+
+      btnUnlock.addEventListener("click", () => {
+        isLocked = false;
+        btnUpload.disabled = false;
+        btnLock.disabled = false;
+        btnUnlock.style.display = "none";
+        dropzone.style.cursor = "pointer";
+        statusText.textContent = "Status: Ready";
+        statusText.classList.remove("locked");
+      });
+    });
+
+    // 2. Auto-Scroll Narrator Logic
+    const btnPlay = document.getElementById("btnPlayNarrator");
+    const btnStop = document.getElementById("btnStopNarrator");
+    const statusLabel = document.getElementById("narratorStatus");
+    const narrateItems = document.querySelectorAll(".narrate-item");
+
+    let synth = window.speechSynthesis;
+    let currentIndex = 0;
+    let isNarrating = false;
+
+    function clearHighlights() {
+      narrateItems.forEach(el => el.classList.remove("highlight-speech"));
+    }
+
+    function narrateNext() {
+      if (!isNarrating || currentIndex >= narrateItems.length) {
+        stopNarration();
+        statusLabel.textContent = "Narration Complete";
+        return;
+      }
+
+      clearHighlights();
+      const currentItem = narrateItems[currentIndex];
+      currentItem.classList.add("highlight-speech");
+      
+      currentItem.scrollIntoView({ behavior: "smooth", block: "center" });
+
+      const textToRead = currentItem.innerText;
+      const utterance = new SpeechSynthesisUtterance(textToRead);
+      utterance.rate = 1.0;
+      utterance.pitch = 1.0;
+
+      utterance.onend = () => {
+        if (isNarrating) {
+          currentIndex++;
+          narrateNext();
+        }
+      };
+
+      utterance.onerror = () => {
+        stopNarration();
+        statusLabel.textContent = "Narration error occurred";
+      };
+
+      statusLabel.textContent = `Reading item ${currentIndex + 1} of ${narrateItems.length}`;
+      synth.speak(utterance);
+    }
+
+    function stopNarration() {
+      isNarrating = false;
+      if (synth) synth.cancel();
+      clearHighlights();
+      btnPlay.style.display = "inline-block";
+      btnStop.style.display = "none";
+      statusLabel.textContent = "Paused / Stopped";
+    }
+
+    btnPlay.addEventListener("click", () => {
+      if (!synth) {
+        alert("Speech synthesis is not supported in your browser.");
+        return;
+      }
+      if (synth.speaking) synth.cancel();
+
+      isNarrating = true;
+      currentIndex = 0;
+      btnPlay.style.display = "none";
+      btnStop.style.display = "inline-block";
+      narrateNext();
+    });
+
+    btnStop.addEventListener("click", () => {
+      stopNarration();
+    });
+  });
+</script>
+
+
+</body></html>
